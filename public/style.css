@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.sectionWrapper {
+  @apply max-w-sectionWrapper mx-auto;
+}
+
+.siteBtn {
+  @apply bg-primary px-9 py-2.5 flex items-center justify-center font-semibold text-base leading-6 h-btnHeight rounded-md;
+}
+
+.numberWrapper .number {
+  @apply rounded-full bg-stepsColor w-9 h-9 flex items-center justify-center font-semibold text-xl;
+}
+
+.testimonialBlock {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff715b),
+    to(#5132c0)
+  );
+  background-image: linear-gradient(90deg, #ff715b, #5132c0);
+}
+
+.clientsLogo {
+  @apply flex flex-wrap items-center justify-between;
+}
+
+.clientsImage {
+  @apply opacity-50 mx-3 my-6;
+}
+
+.featureBlockWrap {
+  @apply p-9 h-full rounded-twelve flex flex-col justify-center;
+}
+
+.featureBlock .iconWrap {
+  @apply mb-6 w-24 h-24 rounded-full mx-auto flex items-center justify-center;
+}
+
+.featureBlock .content h3 {
+  @apply text-white font-semibold mb-4 text-2xl leading-7.8xl;
+}
+
+.featureBlock .content p {
+  @apply text-textColor font-medium text-xl leading-7;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: "";
+}
+
+.arrowsSlider {
+  @apply block float-none left-auto right-0;
+}
+
+.arrowsSlider span {
+  @apply block rounded-full bg-white w-12 h-12 flex items-center justify-center absolute;
+  bottom: 4.55%;
+}
+
+.prevFeature {
+  right: 15%;
+}
+
+.nextFeature {
+  right: 7%;
+}
+
+.blogBlock {
+  @apply rounded-twelve overflow-hidden bg-bgColorTwo min-h-gridHeight flex flex-col;
+}
+
+.blogBlock .content {
+  @apply p-6 text-white flex flex-col justify-between items-stretch;
+  flex: 1 0 auto;
+}
+
+.blogBlock .content h3 {
+  @apply mb-4 text-2.5xl font-semibold tracking-minusTwo leading-9;
+}
+
+.blogBlock .content .blogFooter {
+  @apply flex justify-between items-center font-semibold;
+}
+
+.blogBlock .content .categoryWrap .category {
+  @apply rounded-full px-3 leading-8 text-base;
+}

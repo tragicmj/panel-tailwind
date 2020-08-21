@@ -9,10 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-.sectionWrapper {
-  @apply max-w-sectionWrapper mx-auto;
-}
-
 .siteBtn {
   @apply bg-primary px-9 py-2.5 flex items-center justify-center font-semibold text-base leading-6 h-btnHeight rounded-md;
 }
@@ -32,6 +28,26 @@ body {
   background-image: linear-gradient(90deg, #ff715b, #5132c0);
 }
 
+.testimonialBlock .slick-dots li.slick-active button:before,
+.testimonialBlock .slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+.slick-dots {
+  bottom: -16%;
+}
+
+.testimonialBlock .slick-dots li.slick-active button:before {
+  font-size: 17px;
+}
+
+.testimonialBlock .slick-dots li button:before {
+  font-size: 15px;
+}
+
 .clientsLogo {
   @apply flex flex-wrap items-center justify-between;
 }
@@ -41,7 +57,7 @@ body {
 }
 
 .featureBlockWrap {
-  @apply p-9 h-full rounded-twelve flex flex-col justify-center;
+  @apply h-full rounded-twelve flex flex-col justify-center;
 }
 
 .featureBlock .iconWrap {
@@ -49,11 +65,11 @@ body {
 }
 
 .featureBlock .content h3 {
-  @apply text-white font-semibold mb-4 text-2xl leading-7.8xl;
+  @apply text-white font-semibold mb-4;
 }
 
 .featureBlock .content p {
-  @apply text-textColor font-medium text-xl leading-7;
+  @apply text-textColor font-medium;
 }
 
 .slick-next:before,
@@ -66,7 +82,7 @@ body {
 }
 
 .arrowsSlider span {
-  @apply block rounded-full bg-white w-12 h-12 flex items-center justify-center absolute;
+  @apply block rounded-full bg-white  flex items-center justify-center absolute;
   bottom: 4.55%;
 }
 
@@ -79,7 +95,7 @@ body {
 }
 
 .blogBlock {
-  @apply rounded-twelve overflow-hidden bg-bgColorTwo min-h-gridHeight flex flex-col;
+  @apply rounded-twelve overflow-hidden bg-bgColorTwo  flex flex-col;
 }
 
 .blogBlock .content {
@@ -88,7 +104,7 @@ body {
 }
 
 .blogBlock .content h3 {
-  @apply mb-4 text-2.5xl font-semibold tracking-minusTwo leading-9;
+  @apply mb-4 font-semibold tracking-minusTwo;
 }
 
 .blogBlock .content .blogFooter {
@@ -96,5 +112,21 @@ body {
 }
 
 .blogBlock .content .categoryWrap .category {
-  @apply rounded-full px-3 leading-8 text-base;
+  @apply rounded-full px-3;
+}
+
+@media screen and (max-width: 991px) {
+  .prevFeature {
+    right: 18%;
+  }
+  .slick-dots {
+    bottom: -2%;
+  }
+  .testimonialBlock .slick-dots li.slick-active button:before {
+    font-size: 12px;
+  }
+
+  .testimonialBlock .slick-dots li button:before {
+    font-size: 9px;
+  }
 }

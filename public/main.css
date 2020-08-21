@@ -23501,12 +23501,6 @@ body {
   overflow-x: hidden;
 }
 
-.sectionWrapper {
-  max-width: 1296px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .siteBtn {
   --bg-opacity: 1;
   background-color: #3ccf91;
@@ -23541,6 +23535,27 @@ body {
   background-image: linear-gradient(90deg, #ff715b, #5132c0);
 }
 
+.testimonialBlock .slick-dots li.slick-active button:before,
+.testimonialBlock .slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+
+.slick-dots {
+  bottom: -16%;
+}
+
+.testimonialBlock .slick-dots li.slick-active button:before {
+  font-size: 17px;
+}
+
+.testimonialBlock .slick-dots li button:before {
+  font-size: 15px;
+}
+
 .clientsLogo {
   display: flex;
   flex-wrap: wrap;
@@ -23557,7 +23572,6 @@ body {
 }
 
 .featureBlockWrap {
-  padding: 2.25rem;
   height: 100%;
   border-radius: 12px;
   display: flex;
@@ -23583,15 +23597,11 @@ body {
   color: rgba(255, 255, 255, var(--text-opacity));
   font-weight: 600;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 1.875rem;
 }
 
 .featureBlock .content p {
   color: #ffffff80;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .slick-next:before,
@@ -23612,8 +23622,6 @@ body {
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
-  width: 3rem;
-  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23633,7 +23641,6 @@ body {
   border-radius: 12px;
   overflow: hidden;
   background-color: #ffffff0d;
-  min-height: 528px;
   display: flex;
   flex-direction: column;
 }
@@ -23652,10 +23659,8 @@ body {
 
 .blogBlock .content h3 {
   margin-bottom: 1rem;
-  font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  line-height: 2.25rem;
 }
 
 .blogBlock .content .blogFooter {
@@ -23669,8 +23674,24 @@ body {
   border-radius: 9999px;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  line-height: 2rem;
-  font-size: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .prevFeature {
+    right: 18%;
+  }
+
+  .slick-dots {
+    bottom: -2%;
+  }
+
+  .testimonialBlock .slick-dots li.slick-active button:before {
+    font-size: 12px;
+  }
+
+  .testimonialBlock .slick-dots li button:before {
+    font-size: 9px;
+  }
 }
 
 @media (min-width: 640px){
